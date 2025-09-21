@@ -1,5 +1,5 @@
 # Use official Nginx image
-FROM nginx:stable-alpine
+FROM 337909774524.dkr.ecr.us-west-2.amazonaws.com/nginx:stable-alpine
 
 # Remove default Nginx files
 RUN rm -rf /usr/share/nginx/html/*
