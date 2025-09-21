@@ -1,0 +1,9 @@
+version: 0.0
+Resources:
+  - TargetService:
+      Type: AWS::EKS::Service
+      Properties:
+        ClusterName: brain-tasks-cluster
+        ServiceName: brain-tasks-service
+        ContainerName: brain-tasks-app
+        ImageUri: 337909774524.dkr.ecr.us-west-2.amazonaws.com/brain-tasks-app:latest
